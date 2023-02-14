@@ -1,0 +1,98 @@
+<mvc:View controllerName="firstexample.firstexample.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <content >
+    <VBox class="sapUiSmallMargin">
+    	<f:SimpleForm id="SimpleFormDisplay480_12121"
+			editable="false"
+			layout="ResponsiveGridLayout"
+
+			labelSpanXL="4"
+			labelSpanL="4"
+			labelSpanM="12"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="0"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="2"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<core:Title text="Manager Fıeld" />
+				<Label text="Company Code" />
+				<MaskInput mask="999 - 999- 999" placeholderSymbol="_" placeholder="Enter nine-digit number" showClearIcon="true" />
+				 <Button class = "btn" text = "Continue">
+							
+						</Button>
+			</f:content>
+		</f:SimpleForm>
+		<f:SimpleForm id="SimpleFormDisplay480_12122"
+			editable="false"
+			layout="ResponsiveGridLayout"
+
+			labelSpanXL="4"
+			labelSpanL="4"
+			labelSpanM="12"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="0"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="2"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<core:Title text="Company Info" />
+				<Label text="Company VD Number" />
+				<Text text="0012034343006" />
+				<Label text="Authority Status" />
+				
+					<RadioButtonGroup id="rbg3" columns="5" valueState="Information" class="sapUiMediumMarginBottom">
+			<RadioButton id="RB3-1" text="Approved" />
+			<RadioButton id="RB3-2" text="Declined" />
+		</RadioButtonGroup>
+				
+				<Label text="Certificate Number" />
+				<Text text="12345678" />
+               
+                <Label text="Certificate Start Date" />
+				 <DatePicker id="DP17" calendarWeekNumbering="MiddleEastern" class="sapUiSmallMarginBottom" />
+               
+				<core:Title text="" />
+				<Label text="Company Name" />
+				<Text text="Calkan Informatics " />
+				<Label text="Adress" />
+				<Text text="Denizli, İstanbul" />
+                <Label text="Phone Number" />
+				<Text text="+905546443862" />
+                <Label text="E-Mail" />
+				<Text text="cancalkaniletisim@gmail.com" />
+                 <Label text="Tax Number" />
+				<Text text="12345678" />
+               <Label text="Certificate End Date" />
+				 <DatePicker id="DP18" calendarWeekNumbering="MiddleEastern" class="sapUiSmallMarginBottom" />
+               
+
+			</f:content>
+		</f:SimpleForm>
+		
+	</VBox>
+
+        </content>
+		<footer>
+            <OverflowToolbar>
+                <ToolbarSpacer />
+                <Button class="Btn" press="onButtonPress" activeIcon="" ariaHasPopup="None" enabled="true" icon="sap-icon://accept" iconDensityAware="true" iconFirst="true" text="Send" textDirection="Inherit" type="Emphasized" width="" />
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</mvc:View>
